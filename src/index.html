@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Прогноз погоды</title>
+</head>
+<body>
+    <h1>Узнай погоду в своём городе</h1>
+  <input maxlength="30" type="text" id="cityInput" placeholder="Введите город" oninput="removeLeadingSpaces(this)">
+  <button onclick="getWeather()">Узнать погоду</button>
+
+  <div id="weatherResult"></div>
+
+  <script src="./script.js"></script>
+    
+</body>
+</html>
